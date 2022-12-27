@@ -1030,7 +1030,7 @@ textarea::placeholder {
 }
 
 .modal__checkbox:checked + .modal__icon-police {
-  background-image: url(/images/iconcheck.svg);
+  background-image: url("/images/iconcheck.svg");
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-text-color);
