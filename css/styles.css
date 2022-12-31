@@ -1027,6 +1027,7 @@ textarea::placeholder {
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-text-color);
+  background-color: var(--accent-text-color);
 }
 
 .modal__form-label-police {
