@@ -570,7 +570,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.projects__card-text {
+.projects__meta {
   padding: 20px 24px;
   border: 1px solid var(--primary-bg-color);
   border-top-style: none;
@@ -774,7 +774,11 @@ body {
 
 /* Форма футер */
 
-.page-footer__title-form {
+.footer-form {
+  margin-left: 93px;
+}
+
+.footer-form__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -786,15 +790,11 @@ body {
   color: var(--primary-white-color);
 }
 
-.page-footer__form {
-  margin-left: 93px;
-}
-
-.page-footer__posotion-input {
+.footer-form__posotion-input {
   display: flex;
 }
 
-.page-footer__form-input {
+.footer-form__input {
   width: 358px;
   background-color: var(--secondary-bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -804,11 +804,11 @@ body {
   color: var(--primary-white-color);
 }
 
-.page-footer__form-input:focus-within {
+.footer-form__input:focus-within {
   outline: none;
 }
 
-.page-footer__btn-form {
+.footer-form__btn {
   display: flex;
   align-items: center;
   text-align: center;
@@ -831,7 +831,7 @@ body {
   border-radius: 4px;
 }
 
-.page-footer__icon-form {
+.footer-form__icon {
   margin-left: 10px;
   width: 24px;
   height: 24px;
@@ -909,7 +909,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__form-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -919,28 +919,28 @@ body {
   margin-bottom: 12px;
 }
 
-.modal__form-field {
+.form__field {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
 
-.modal__form-field:first-child {
+.form__field:first-child {
   margin-top: 0;
 }
 
-.modal__form-field:focus-within > .modal__form-icon {
+.form__field:focus-within > .form__icon {
   fill: var(--accent-text-color);
   outline: none;
 }
 
-.modal__form-field:focus-within > .modal__form-input {
+.form__field:focus-within > .form__input {
   border-color: var(--accent-text-color);
   outline: none;
 }
 
-.modal__form-label {
+.form__label {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
@@ -949,7 +949,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-.modal__form-input {
+.form__input {
   height: 40px;
   margin-top: 4px;
   padding-left: 42px;
@@ -961,7 +961,7 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__form-icon {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -973,7 +973,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-textarea {
+.form__textarea {
   resize: none;
   margin-top: 4px;
   height: 120px;
@@ -985,12 +985,12 @@ textarea {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-textarea:focus-within {
+.form__textarea:focus-within {
   border-color: var(--accent-text-color);
   outline: none;
 }
 
-textarea::placeholder {
+.form__textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
@@ -999,7 +999,7 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal__form-field-police {
+.form__field-police {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1007,13 +1007,13 @@ textarea::placeholder {
   margin-top: 20px;
 }
 
-.modal__checkbox {
+.form__checkbox {
   appearance: none;
 
   position: absolute;
 }
 
-.modal__icon-police {
+.form__icon-police {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -1022,7 +1022,7 @@ textarea::placeholder {
   border-radius: 4px;
 }
 
-.modal__checkbox:checked + .modal__icon-police {
+.form__checkbox:checked + .form__icon-police {
   background-image: url(../images/iconcheck.svg);
   background-size: contain;
   background-origin: border-box;
@@ -1030,7 +1030,7 @@ textarea::placeholder {
   background-color: var(--accent-text-color);
 }
 
-.modal__form-label-police {
+.form__label-police {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -1040,7 +1040,7 @@ textarea::placeholder {
   color: var(--secondary-text-color);
 }
 
-.modal__form-link-police {
+.form__link-police {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -1049,12 +1049,12 @@ textarea::placeholder {
   color: var(--accent-text-color);
 }
 
-.modal__form-field-btn {
+.form__field-btn {
   text-align: center;
   margin-top: 30px;
 }
 
-.modal__form-btn {
+.form__btn {
   text-align: center;
 
   width: 200px;
